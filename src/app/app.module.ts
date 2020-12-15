@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChangeTextDirective } from './shared/directives/change-text/change-text.directive';
 import { ChildComponent } from './components/child/child.component';
+import { UpperCaseDirective } from './shared/directives/upper-case/upper-case.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChangeTextDirective,
-    ChildComponent
+    ChildComponent,
+    UpperCaseDirective
   ],
   imports: [
     BrowserModule,

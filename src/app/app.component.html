@@ -1,9 +1,3 @@
-<h1>{{title}}</h1>
+<p> Sem diretiva 'upperCase' {{title}} </p>
 
-<form #form="ngForm" (onSubmit)="updateMessage(form)" novalidate>
-  <input type="text" name="rootMessage" [(ngModel)]="rootMessage">
-  <button type="submit">Update</button>
-  <button (click)="toggle()">Hide/Show Child </button>
-</form>
-<app-child *ngIf="displayChild" [message]="rootMessage"></app-child>
-<app-child [message]="rootMessage"></app-child>
+<p upperCase> Com diretiva 'upperCase' {{title}} </p>
